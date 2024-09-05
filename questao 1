@@ -1,0 +1,27 @@
+#include <stdio.h> 
+#include <string.h>
+
+int tamS(char x[]){
+     
+ int tamanho=0;
+      
+        while(x[tamanho] != '\0'){
+                tamanho++;
+        }
+            
+         return tamanho;       
+}
+
+int main(){
+char str[100];
+int comprimento;
+
+     printf("digite o seu texto\n");
+     fgets(str,100,stdin);   
+     
+ comprimento= tamS(str);
+ 
+  printf("o tamanho dessa string e: %d",comprimento-1);
+         
+    return 0;
+}
