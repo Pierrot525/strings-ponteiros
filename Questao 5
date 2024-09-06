@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+
+int comp(char x[],char y[]){
+    
+int i=0;
+            //percora as strings ate a quebra de vetor
+       while(x[i]!='\0' && y[i]!='\0'){
+           
+           if(x[i]!=y[i])   {
+                return x[i]-y[i]; //vetores iguais sempre dao resto 0 pois (A-A=0)
+                            }
+             i++; }
+       
+           return x[i]-y[i]; }
+            
+int main(){
+char strA[50],strB[50];
+
+         printf("digite a primeira string\n");
+           fgets(strA,50,stdin);
+           
+         printf("digite a segunda string\n");
+           fgets(strB,50,stdin);
+   
+          comp(strA,strB);
+          
+          //verifique se o resto da funcao e 0 ou nao
+         if( comp(strA,strB) == 0){
+             
+                printf("strings iguais");
+         }
+         else{
+                printf("strings divergentes");
+         }
+        
+    return 0;
+}
