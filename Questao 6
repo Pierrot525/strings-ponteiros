@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+int N,cont1=0;
+char str1[100];
+
+                 //receba uma string de referencia.
+        printf("digite seu numero binario");
+         fgets(str1,100,stdin); 
+         
+     //declare o ponteiro que sera lida pela funcao, ele herdara o conteudo da string de referencia!
+char *str2= &str1;
+      
+     //percora indice por indice o ponteiro, e guarde os termos iguais ao pedido;
+        while(*str2){
+            if(*str2=='1'){
+                cont1++;
+            }
+            *str2++;
+        }
+        
+        printf("o numero de 1's nesse numero e: %d",cont1);
+
+    return 0;
+}
