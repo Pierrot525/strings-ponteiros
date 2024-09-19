@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+char str[50];
+int i;
+
+       printf("digite seus numeros\n");
+       gets(str);
+       
+      for(i=0; i < strlen(str);i++){
+        
+        if(str[i]=='0'){
+            str[i]='1';
+        }
+      }
+
+    printf("seus numeros agora são :\n  %s",str);
+
+    return 0; }
