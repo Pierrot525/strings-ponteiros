@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+char str[50];
+
+       printf("digite sua frase\n");
+       gets(str);
+       
+      for(int i=0; i<strlen(str) ;i++){
+          
+          switch(str[i]){
+              
+              case 'a' : str[i]= '_'; break;
+              case 'A' : str[i]= '_'; break;
+              case 'e' : str[i]= '_'; break;
+              case 'E' : str[i]= '_'; break;
+              case 'i' : str[i]= '_'; break;
+              case 'I' : str[i]= '_'; break;
+              case 'o' : str[i]= '_'; break;
+              case 'O' : str[i]= '_'; break;
+              case 'u' : str[i]= '_'; break;
+              case 'U' : str[i]= '_'; break;
+              
+          }
+      }
+      
+       printf("sua frase sem vogais e:\n %s", str);
+
+    return 0;
+}
