@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+char str[50],l1,l2;
+
+       printf("digite seu texto\n");
+       gets(str);
+       
+       printf("Digite a letra que deseja substituir (L1): ");
+       scanf(" %c", &l1);
+       
+       printf("Digite a nova letra (L2): ");
+       scanf(" %c", &l2);
+        
+       
+      for(int i=0; i < strlen(str);i++){
+        
+        if(str[i]==l1 ){
+            str[i]=l2;
+        }
+      }
+
+    printf("seus numeros agora são :\n  %s",str);
+
+    return 0; }
