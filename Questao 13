@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+char str[100],novastr[100];
+
+    printf("digite seu texto\n");
+      gets(str);
+      
+      for(int i=0;i<strlen(str);i++){
+          
+          novastr[i]= str[i];
+          
+          if(str[i]>=97 && str[i]<=122){
+             novastr[i]= str[i]-32;
+          }
+      }
+
+    
+   printf("sua nova frase \n %s",novastr);
+
+
+    return 0;
+}
