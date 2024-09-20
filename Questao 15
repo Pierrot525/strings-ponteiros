@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+char str[50],str2[50];
+char maior[50];
+
+       printf("digite seu texto\n");
+       gets(str);
+       
+       printf("digite outro texto\n");
+       gets(str2);
+       
+      for(int i=0; i < strlen(str);i++){
+        
+        if(str[i]<str2[i] ){
+            printf("a palavra primeira e:\n %s",str);
+        }
+        else{
+             printf("a palavra primeira e:\n %s",str2);
+        }
+        
+        break;
+      }
+
+
+
+    return 0; }
